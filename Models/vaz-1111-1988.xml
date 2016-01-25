@@ -1,0 +1,113 @@
+<PropertyList>
+ 
+<path>vaz-1111-1988.ac</path>
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/vaz-1111-1988/Models/Liveries", 10);
+var self = cmdarg();
+self.getNode("gear/gear[0]/rollspeed-ms", 1).alias(self.getNode("sim/multiplay/generic/float[1]"));
+	self.getNode("gear/gear[1]/rollspeed-ms", 1).alias(self.getNode("sim/multiplay/generic/float[2]"));
+	self.getNode("gear/gear[2]/rollspeed-ms", 1).alias(self.getNode("sim/multiplay/generic/float[3]"));
+	self.getNode("gear/gear[3]/rollspeed-ms", 1).alias(self.getNode("sim/multiplay/generic/float[4]"));
+	self.getNode("controls/flight/aileron", 1).alias(self.getNode("sim/multiplay/generic/float[5]"));
+    </load>
+
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+<animation>
+    <type>material</type>
+    <object-name>Body</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>Kerdi Barbie Pink.png</texture>
+  </animation>
+<animation>
+   <type>light</type>
+   <light-type>spot</light-type>
+   <name>LightSrcRight</name>
+   <object-name>LandingLight</object-name>
+   <nopreview/>
+   <position>
+     <x>-1.22795</x>
+     <y>-0.05271</y>
+     <z>0.57536</z>
+   </position>
+   <direction>
+     <x>-2.14222</x>
+     <y>-0.05271</y>
+     <z>-0.1</z>
+   </direction>
+     <diffuse>
+            <r>2.7</r>
+            <g>2.7</g>
+            <b>2.6</b>
+            <a>1.0</a>
+        </diffuse>
+        <specular>
+            <r>2.7</r>
+            <g>2.7</g>
+            <b>2.6</b>
+            <a>1.0</a>
+        </specular>
+    <attenuation>
+     <c>1.0</c>
+     <l>0.002</l>
+     <q>0.00005</q>
+   </attenuation>
+   <exponent>25</exponent>
+   <cutoff>39</cutoff>
+    <near-m>2</near-m>
+   <far-m>250</far-m>
+ </animation>
+
+<!-- ========== Effects ========= -->
+
+	<effect>
+		<inherits-from>Aircraft/vaz-1111-1988/Models/Effects/vaz-1111-1988</inherits-from>
+		<object-name>Body</object-name>
+		<object-name>metal</object-name>
+		<object-name>Chrome</object-name>
+	</effect>
+<effect>
+ <inherits-from>Effects/model-transparent</inherits-from>
+ <object-name>Windows</object-name>
+</effect>
+<!-- Submodels-->
+<model> 
+      <path>Submodels/LFWheel.xml</path>
+      <offsets> 
+      <x-m> -0.77547</x-m>
+  <y-m>-0.71083</y-m>
+  <z-m>0.27169</z-m>
+      </offsets>
+    </model>
+ 	<model> 
+      <path>Submodels/RFWheel.xml</path>
+      <offsets> 
+    <x-m>-0.77547</x-m>
+  <y-m>0.71083</y-m>
+  <z-m>0.27169</z-m>
+      </offsets>
+    </model>
+	<model> 
+      <path>Submodels/LRWheel.xml</path>
+      <offsets> 
+    <x-m>1.45019</x-m>
+  <y-m>-0.71083</y-m>
+  <z-m>0.27169</z-m>
+      </offsets>
+    </model>
+ 	<model> 
+      <path>Submodels/RRWheel.xml</path>
+      <offsets> 
+     <x-m>1.45019</x-m>
+  <y-m>0.71083</y-m>
+  <z-m>0.27169</z-m>
+      </offsets>
+</model>
+
+</PropertyList>
+ 

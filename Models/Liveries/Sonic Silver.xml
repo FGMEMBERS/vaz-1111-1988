@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--####    1988 VAZ 1111 Oka  ####
+####    AUSDKUNST    ####
+-->
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Sonic Silver</name>
+            <texture>Liveries/Kerdi Sonic Silver.png</texture>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

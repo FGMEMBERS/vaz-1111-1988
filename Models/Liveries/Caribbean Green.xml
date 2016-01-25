@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--####    1988 VAZ 1111 Oka  ####
+####    AUSDKUNST    ####
+-->
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Caribbean Green</name>
+            <texture>Liveries/Kerdi Caribbean Green.png</texture>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

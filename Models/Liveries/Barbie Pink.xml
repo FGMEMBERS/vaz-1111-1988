@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--####    1988 VAZ 1111 Oka  ####
+####    AUSDKUNST    ####
+-->
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Barbie Pink</name>
+            <texture>Kerdi Barbie Pink.png</texture>
+        </livery>
+    </model>
+</sim>
+</PropertyList>
